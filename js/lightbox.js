@@ -3,7 +3,7 @@ const imagenesLight = document.querySelector('.agregar-imagen')
 const contenedorLight = document.querySelector('.imagen-light')
 const hamburger1 = document.querySelector('.hamburger')
 
-const imagenesNosotros = document.querySelectorAll('.nosotros .imagenes img')
+const imagenesNosotros = document.querySelectorAll('.somos .imagenes img')
 
 imagenes.forEach(imagen=>{
     imagen.addEventListener('click',()=>{

@@ -4,7 +4,7 @@ var imagenes = document.querySelectorAll('.img-galeria');
 var imagenesLight = document.querySelector('.agregar-imagen');
 var contenedorLight = document.querySelector('.imagen-light');
 var hamburger1 = document.querySelector('.hamburger');
-var imagenesNosotros = document.querySelectorAll('.nosotros .imagenes img');
+var imagenesNosotros = document.querySelectorAll('.somos .imagenes img');
 imagenes.forEach(function (imagen) {
   imagen.addEventListener('click', function () {
     aparecerImagen(imagen.getAttribute('src'));

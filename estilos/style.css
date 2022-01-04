@@ -106,7 +106,7 @@ nav{
     box-shadow: 1px 1px 10px rgba(0,0,0,.2);
     position: fixed;
     top:0;
-    z-index: 100;
+    z-index: 200;
     padding: 0 40px;
     transition: ease-in-out 0.5s;   
 
@@ -197,9 +197,6 @@ nav{
 .nosotros>img{
     width: 550px;
     border-radius: 10px;
-
-
-
 }
 
 
@@ -209,6 +206,66 @@ nav{
   text-align: justify;
   width: 80%;
 }
+/* somos */
+
+.somos{
+    height: 100vh;
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.somos .textos-somos{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+
+}
+
+.somos .imagenes{
+    width: 50%;
+    height: 60%;
+    overflow: hidden;
+    position: relative;
+   
+}
+
+.somos .imagenes img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: left 1.5s ease-in-out;
+    opacity: 0.9;
+    z-index: 100;
+
+}
+
+.somos .imagenes img.active{
+    left: 0;
+    z-index: 100;
+}
+
+.somos .imagenes img.preactive{
+    left: 100%;
+    opacity: 0;
+    z-index: 0;
+}
+
+
 
 
 
@@ -527,6 +584,37 @@ footer .texto_footer{
         align-items: center;
     }
 
+    .somos{
+        height: 100vh;
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 40px;
+    
+    }
+
+    
+.somos .textos-somos{
+    width: 90%;
+    height: 100%;
+    padding-top: 30px;
+  
+
+}
+
+.somos .imagenes{
+    width: 80%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+   
+}
+
+
+
     .textos-nosotros p {
        margin: auto;
        display: flex;
@@ -583,6 +671,7 @@ footer .texto_footer{
         align-items: center;
         flex-direction: column;
         justify-content: space-evenly;
+        padding-bottom: 30px;
 
         clip-path: circle(0.0% at 100% 0);
     }
@@ -693,8 +782,8 @@ footer .texto_footer{
   
     }
     .galeria-work .cont-work{
-        width: 70%;
-        height: 300px;
+        width: 45%;
+        height: 150px;
      
     }
 
