@@ -13,15 +13,16 @@ $(function () {
         }
     });
 
+
     // ir a las distintas secciones
 
-    let nosotros = $('#nosotros').offset().top,
+    let somos = $('#somos').offset().top,
         excursiones = $('#excursiones').offset().top,
         ubicacion = $('#ubicacion').offset().top,
         contacto = $('#contacto').offset().top;
 
     window.addEventListener('resize', function(){
-        let nosotros = $('#nosotros').offset().top,
+        let somos = $('#somos').offset().top,
         excursiones = $('#excursiones').offset().top,
         ubicacion = $('#ubicacion').offset().top,
         contacto = $('#contacto').offset().top;
@@ -34,10 +35,10 @@ $(function () {
         },600);
     });
 
-    $('#enlace-nosotros').on('click', function(e){
+    $('#enlace-somos').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: nosotros -0
+            scrollTop: somos -0
         },600);
     });
 
